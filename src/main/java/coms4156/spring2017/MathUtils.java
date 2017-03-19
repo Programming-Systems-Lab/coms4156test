@@ -24,6 +24,12 @@ public class MathUtils {
 		return (int)result;
 	}
 	
+	/**
+	 * Sub function
+	 * @param i
+	 * @param j
+	 * @return
+	 */
 	public static int sub(int i, int j) {
 		long result = ((long)i) - j;
 		if (isOverflow(result)) {
