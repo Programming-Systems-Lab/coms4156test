@@ -10,6 +10,12 @@ public class MathUtils {
 		}
 	}
 	
+	/**
+	 * Add function
+	 * @param i
+	 * @param j
+	 * @return
+	 */
 	public static int add(int i, int j) {
 		long result = ((long)i) + j;
 		if (isOverflow(result)) {
