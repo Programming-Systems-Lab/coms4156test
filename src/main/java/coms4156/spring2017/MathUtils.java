@@ -16,11 +16,12 @@ public class MathUtils {
 	 * @param j
 	 * @return
 	 */
-	public static int add(int i, int j) {
+	public static int add(int i, int j, Counter c) {
 		long result = ((long)i) + j;
 		if (isOverflow(result)) {
 			throw new RuntimeException("Result overflow");
 		}
+		c.addCount();
 		return (int)result;
 	}
 	
@@ -30,15 +31,17 @@ public class MathUtils {
 	 * @param j
 	 * @return
 	 */
-	public static int sub(int i, int j) {
+	public static int sub(int i, int j, Counter c) {
 		long result = ((long)i) - j;
 		if (isOverflow(result)) {
 			throw new RuntimeException("Result overflow");
 		}
+		c.addCount();
 		return (int)result;
 	}
 	
 	public static void main(String[] args) {
-		add(5, 6);
+		Counter c = new Counter();
+		add(5, 6, c);
 	}
 }

@@ -14,6 +14,8 @@ public class MathUtilsIT {
 		int j = 6;
 		int m = 7;
 		int n = 8;
-		assertEquals("10", StringUtils.convertToString(MathUtils.add(MathUtils.add(i, j), MathUtils.sub(m, n))));
+		Counter c = new Counter();
+		assertEquals(10, MathUtils.add(MathUtils.add(i, j, c), MathUtils.sub(m, n, c), c));
+		assertEquals(3, c.getCount());
 	}
 }
