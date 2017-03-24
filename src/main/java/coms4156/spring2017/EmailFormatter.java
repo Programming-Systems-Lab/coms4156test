@@ -1,11 +1,11 @@
 package coms4156.spring2017;
 
-import java.util.IllegalFormatException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EmailFormatter {
 	
+	//Ref: https://www.mkyong.com/regular-expressions/how-to-validate-email-address-with-regular-expression/
 	private static final String EMAIL_PATTERN =
 			"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
 			+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";

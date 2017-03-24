@@ -8,6 +8,12 @@ public class EmailGenerator {
 	
 	public String latestAddress = null;
 	
+	/**
+	 * Ref: http://stackoverflow.com/questions/20389890/generating-a-random-number-between-1-and-10-java
+	 * @param min
+	 * @param max
+	 * @return
+	 */
 	public static int rndInt(int min, int max) {
 		Random rand = new Random();
 		int ret = (rand.nextInt(max - min) + 1) + min;
