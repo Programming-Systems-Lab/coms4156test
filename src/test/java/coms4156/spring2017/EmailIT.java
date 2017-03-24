@@ -4,6 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+/**
+ * Chain up EmailGenerator->EmailFormatter->EmailSender
+ * @author mikefhsu
+ *
+ */
 public class EmailIT {
 		
 	@Test
