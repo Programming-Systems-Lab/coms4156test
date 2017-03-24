@@ -20,6 +20,11 @@ public class EmailFormatter {
 		pattern = Pattern.compile(EMAIL_PATTERN);
 	}
 	
+	/**
+	 * Checkk email address, create email object and send.
+	 * @param address
+	 * @return
+	 */
 	public boolean formatAndSend(String address) {
 		matcher = pattern.matcher(address);
 		if (!matcher.matches()) {

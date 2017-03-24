@@ -1,5 +1,10 @@
 package coms4156.spring2017;
 
+/**
+ * Email object
+ * @author mikefhsu
+ *
+ */
 public class Email {
 	
 	public String address;

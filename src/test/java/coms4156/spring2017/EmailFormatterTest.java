@@ -5,7 +5,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class EamilFormatterTest {
+/**
+ * Unit test EmailFormatter
+ * @author mikefhsu
+ *
+ */
+public class EmailFormatterTest {
 	
 	@Test
 	public void testSuccessfulSend() {

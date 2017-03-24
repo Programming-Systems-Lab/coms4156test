@@ -4,6 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+/**
+ * Unittest EmailGenerator. Use a MockEmailFormatter to isolate the behavior of EmailFormatter
+ * @author mikefhsu
+ *
+ */
 public class EmailGeneratorTest {
 	
 	public class MockEmailFormatter extends EmailFormatter {
